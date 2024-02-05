@@ -1,14 +1,20 @@
 import { createElement } from "./startup";
 import './styleMenu.css';
+import cacio from './Cacio-e-pepe.png';
+import Zucchini from './Stuffed-Zucchini-Boats.png';
+import Kimchi from './Kimchi-Fried-Rice.png';
+import tofu from './Tofu-Avocado-Salad.png';
+import caramel from './caramel-topped-ice-cream.png';
+import eclairs from './chocolate-eclairs.png';
 
 function displayMenu(element){
     var imageUrls = [
-        'url(' + '../src/Cacio-e-pepe.png' + ')',
-        'url(' + '../src/Stuffed-Zucchini-Boats.png' + ')',
-        'url(' + '../src/Kimchi-Fried-Rice.png' + ')',
-        'url(' + '../src/Tofu-Avocado-Salad.png' + ')',
-        'url(' + '../src/caramel-topped-ice-cream.png' + ')',
-        'url(' + '../src/chocolate-eclairs.png' + ')'
+        `url(${cacio})`,
+        `url(${Zucchini})`,
+        `url(${Kimchi})`,
+        `url(${tofu})`,
+        `url(${caramel})`,
+        `url(${eclairs})`
     ];
 
     const photo1Menu = document.querySelector('.photo1Menu');

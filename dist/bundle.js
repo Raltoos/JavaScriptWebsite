@@ -186,7 +186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ generateMenu)\n/* harmony export */ });\n/* harmony import */ var _startup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./startup */ \"./src/startup.js\");\n/* harmony import */ var _styleMenu_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styleMenu.css */ \"./src/styleMenu.css\");\n\r\n\r\n\r\nfunction displayMenu(element){\r\n    var imageUrls = [\r\n        'url(' + '../src/Cacio-e-pepe.png' + ')',\r\n        'url(' + '../src/Stuffed-Zucchini-Boats.png' + ')',\r\n        'url(' + '../src/Kimchi-Fried-Rice.png' + ')',\r\n        'url(' + '../src/Tofu-Avocado-Salad.png' + ')',\r\n        'url(' + '../src/caramel-topped-ice-cream.png' + ')',\r\n        'url(' + '../src/chocolate-eclairs.png' + ')'\r\n    ];\r\n\r\n    const photo1Menu = document.querySelector('.photo1Menu');\r\n    const photo2Menu = document.querySelector('.photo2Menu');\r\n    switch(element.innerText){\r\n        case 'Italian':\r\n            photo1Menu.style.backgroundImage = imageUrls[0];\r\n            photo2Menu.style.backgroundImage = imageUrls[1];\r\n            break;\r\n\r\n        case 'Asian':\r\n            photo1Menu.style.backgroundImage = imageUrls[2];\r\n            photo2Menu.style.backgroundImage = imageUrls[3];\r\n            break;\r\n\r\n        case 'Desserts':\r\n            photo1Menu.style.backgroundImage = imageUrls[4];\r\n            photo2Menu.style.backgroundImage = imageUrls[5];\r\n            break;\r\n    };\r\n}\r\n\r\nfunction generateMenu(contentArea){\r\n    contentArea.innerText = '';\r\n    var menuContainer = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'menu')\r\n\r\n    // Create heading\r\n    var heading = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'heading')\r\n    var headingText = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('h2', 0, 'Menu');\r\n    heading.appendChild(headingText);\r\n    menuContainer.appendChild(heading);\r\n\r\n    // Create content container\r\n    var menuContent = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div',  'menuContent')\r\n\r\n    // Create grid container\r\n    var displayGrid = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'displayGrid');\r\n\r\n    // Create photo1\r\n    var photo1 = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'photo1Menu')\r\n\r\n    // Create photo2\r\n    var photo2 = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'photo2Menu')\r\n\r\n    // Append photos to grid container\r\n    displayGrid.appendChild(photo1);\r\n    displayGrid.appendChild(photo2);\r\n\r\n    // Create sidebar container\r\n    var sideBar = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'sideBar');\r\n\r\n    // Create unordered list\r\n    var ul = document.createElement('ul');\r\n\r\n    // Create list items\r\n    var cuisines = ['Italian', 'Asian', 'Desserts'];\r\n    cuisines.forEach(function(cuisine) {\r\n      var li = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('li', 0, cuisine);\r\n      ul.appendChild(li);\r\n    });\r\n\r\n    // Create \"Book A Table\" button\r\n    var bookButton = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('button', 0, 'Book A Table');\r\n\r\n    // Append ul and button to sidebar\r\n    sideBar.appendChild(ul);\r\n    sideBar.appendChild(bookButton);\r\n\r\n    // Append heading, grid, and sidebar to content container\r\n    menuContent.appendChild(displayGrid);\r\n    menuContent.appendChild(sideBar);\r\n\r\n    // Append content container to main container\r\n    menuContainer.appendChild(menuContent);\r\n\r\n    // Append the entire menu to the body\r\n    contentArea.appendChild(menuContainer);\r\n\r\n    document.querySelectorAll('li').forEach(element => {\r\n        element.addEventListener('click', () => {\r\n            displayMenu(element);\r\n        });\r\n    });\r\n}\n\n//# sourceURL=webpack://javascriptwebsite/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ generateMenu)\n/* harmony export */ });\n/* harmony import */ var _startup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./startup */ \"./src/startup.js\");\n/* harmony import */ var _styleMenu_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styleMenu.css */ \"./src/styleMenu.css\");\n/* harmony import */ var _Cacio_e_pepe_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Cacio-e-pepe.png */ \"./src/Cacio-e-pepe.png\");\n/* harmony import */ var _Stuffed_Zucchini_Boats_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Stuffed-Zucchini-Boats.png */ \"./src/Stuffed-Zucchini-Boats.png\");\n/* harmony import */ var _Kimchi_Fried_Rice_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Kimchi-Fried-Rice.png */ \"./src/Kimchi-Fried-Rice.png\");\n/* harmony import */ var _Tofu_Avocado_Salad_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Tofu-Avocado-Salad.png */ \"./src/Tofu-Avocado-Salad.png\");\n/* harmony import */ var _caramel_topped_ice_cream_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./caramel-topped-ice-cream.png */ \"./src/caramel-topped-ice-cream.png\");\n/* harmony import */ var _chocolate_eclairs_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./chocolate-eclairs.png */ \"./src/chocolate-eclairs.png\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nfunction displayMenu(element){\r\n    var imageUrls = [\r\n        `url(${_Cacio_e_pepe_png__WEBPACK_IMPORTED_MODULE_2__})`,\r\n        `url(${_Stuffed_Zucchini_Boats_png__WEBPACK_IMPORTED_MODULE_3__})`,\r\n        `url(${_Kimchi_Fried_Rice_png__WEBPACK_IMPORTED_MODULE_4__})`,\r\n        `url(${_Tofu_Avocado_Salad_png__WEBPACK_IMPORTED_MODULE_5__})`,\r\n        `url(${_caramel_topped_ice_cream_png__WEBPACK_IMPORTED_MODULE_6__})`,\r\n        `url(${_chocolate_eclairs_png__WEBPACK_IMPORTED_MODULE_7__})`\r\n    ];\r\n\r\n    const photo1Menu = document.querySelector('.photo1Menu');\r\n    const photo2Menu = document.querySelector('.photo2Menu');\r\n    switch(element.innerText){\r\n        case 'Italian':\r\n            photo1Menu.style.backgroundImage = imageUrls[0];\r\n            photo2Menu.style.backgroundImage = imageUrls[1];\r\n            break;\r\n\r\n        case 'Asian':\r\n            photo1Menu.style.backgroundImage = imageUrls[2];\r\n            photo2Menu.style.backgroundImage = imageUrls[3];\r\n            break;\r\n\r\n        case 'Desserts':\r\n            photo1Menu.style.backgroundImage = imageUrls[4];\r\n            photo2Menu.style.backgroundImage = imageUrls[5];\r\n            break;\r\n    };\r\n}\r\n\r\nfunction generateMenu(contentArea){\r\n    contentArea.innerText = '';\r\n    var menuContainer = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'menu')\r\n\r\n    // Create heading\r\n    var heading = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'heading')\r\n    var headingText = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('h2', 0, 'Menu');\r\n    heading.appendChild(headingText);\r\n    menuContainer.appendChild(heading);\r\n\r\n    // Create content container\r\n    var menuContent = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div',  'menuContent')\r\n\r\n    // Create grid container\r\n    var displayGrid = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'displayGrid');\r\n\r\n    // Create photo1\r\n    var photo1 = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'photo1Menu')\r\n\r\n    // Create photo2\r\n    var photo2 = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'photo2Menu')\r\n\r\n    // Append photos to grid container\r\n    displayGrid.appendChild(photo1);\r\n    displayGrid.appendChild(photo2);\r\n\r\n    // Create sidebar container\r\n    var sideBar = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('div', 'sideBar');\r\n\r\n    // Create unordered list\r\n    var ul = document.createElement('ul');\r\n\r\n    // Create list items\r\n    var cuisines = ['Italian', 'Asian', 'Desserts'];\r\n    cuisines.forEach(function(cuisine) {\r\n      var li = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('li', 0, cuisine);\r\n      ul.appendChild(li);\r\n    });\r\n\r\n    // Create \"Book A Table\" button\r\n    var bookButton = (0,_startup__WEBPACK_IMPORTED_MODULE_0__.createElement)('button', 0, 'Book A Table');\r\n\r\n    // Append ul and button to sidebar\r\n    sideBar.appendChild(ul);\r\n    sideBar.appendChild(bookButton);\r\n\r\n    // Append heading, grid, and sidebar to content container\r\n    menuContent.appendChild(displayGrid);\r\n    menuContent.appendChild(sideBar);\r\n\r\n    // Append content container to main container\r\n    menuContainer.appendChild(menuContent);\r\n\r\n    // Append the entire menu to the body\r\n    contentArea.appendChild(menuContainer);\r\n\r\n    document.querySelectorAll('li').forEach(element => {\r\n        element.addEventListener('click', () => {\r\n            displayMenu(element);\r\n        });\r\n    });\r\n}\n\n//# sourceURL=webpack://javascriptwebsite/./src/menu.js?");
 
 /***/ }),
 
@@ -210,6 +210,16 @@ eval("module.exports = __webpack_require__.p + \"466287eac626f0cdb92c.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/Kimchi-Fried-Rice.png":
+/*!***********************************!*\
+  !*** ./src/Kimchi-Fried-Rice.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"82b4e8ebf12fc6f77c48.png\";\n\n//# sourceURL=webpack://javascriptwebsite/./src/Kimchi-Fried-Rice.png?");
+
+/***/ }),
+
 /***/ "./src/Stuffed-Zucchini-Boats.png":
 /*!****************************************!*\
   !*** ./src/Stuffed-Zucchini-Boats.png ***!
@@ -217,6 +227,36 @@ eval("module.exports = __webpack_require__.p + \"466287eac626f0cdb92c.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"9a73fa6c7cfe43573e87.png\";\n\n//# sourceURL=webpack://javascriptwebsite/./src/Stuffed-Zucchini-Boats.png?");
+
+/***/ }),
+
+/***/ "./src/Tofu-Avocado-Salad.png":
+/*!************************************!*\
+  !*** ./src/Tofu-Avocado-Salad.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"30dc92f37a4b57dad931.png\";\n\n//# sourceURL=webpack://javascriptwebsite/./src/Tofu-Avocado-Salad.png?");
+
+/***/ }),
+
+/***/ "./src/caramel-topped-ice-cream.png":
+/*!******************************************!*\
+  !*** ./src/caramel-topped-ice-cream.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"105455e33d65f83a4028.png\";\n\n//# sourceURL=webpack://javascriptwebsite/./src/caramel-topped-ice-cream.png?");
+
+/***/ }),
+
+/***/ "./src/chocolate-eclairs.png":
+/*!***********************************!*\
+  !*** ./src/chocolate-eclairs.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"171d2c0845cee901b074.png\";\n\n//# sourceURL=webpack://javascriptwebsite/./src/chocolate-eclairs.png?");
 
 /***/ }),
 
